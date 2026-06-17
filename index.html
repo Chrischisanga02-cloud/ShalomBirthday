@@ -1,0 +1,136 @@
+  <audio id="song" src="gold-surprises.mp3" preload="auto"></audio>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 20th Birthday!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="confetti"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span>🎉</span>
+        <div>
+          <strong>Birthday Surprise</strong>
+          <p>June 19 · 20 years of you</p>
+        </div>
+      </div>
+      <nav class="page-nav">
+        <button class="page-btn active" data-page="1">1 - Welcome</button>
+        <button class="page-btn" data-page="2">2 - About Her</button>
+        <button class="page-btn" data-page="3">3 - Us</button>
+      </nav>
+    </header>
+
+    <main class="pages">
+      <section class="page page-1 active" id="page1">
+        <div class="welcome-panel">
+          <div class="title-area">
+            <h1>Happy 20th, beautiful!</h1>
+            <p class="sub">Tap the heart and let the celebration begin. This page is all about the magic you bring.</p>
+          </div>
+
+          <div class="interactive-card">
+            <button class="heart-btn" id="openHeart" aria-label="Open surprise">💖</button>
+            <p class="hint">Click the heart for a surprise</p>
+
+            <div class="countdown-card">
+              <h3>Birthday countdown</h3>
+              <p id="countdown">Counting the days...</p>
+            </div>
+
+            <div class="poem-display">
+              <p>Motho waka, your name lights every moment, and your smile makes my whole world glow brighter. This day is all about you, HAVE THE BEST DAY EVER.</p>
+            </div>
+          </div>
+
+          <svg class="bg-heart" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path id="heartPath" d="M100 30 C 100 -10, 180 20, 100 110 C 20 20, 100 -10, 100 30 Z" fill="none" stroke="#ff2d2d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+          <div id="letters"></div>
+        </div>
+        <div class="hero-message">
+          <p>Every moment with you is a new sparkle, let's make today unforgettable.</p>
+        </div>
+      </section>
+
+      <section class="page page-2" id="page2">
+        <div class="section-head">
+          <h2>Messages & Moments About You</h2>
+          <p>These are the reasons I adore you, captured with words and pictures.</p>
+        </div>
+        <div class="message-grid">
+          <article class="message-card">
+            <h3>Your smile</h3>
+            <p>Your smile brightens the hardest days and makes every memory sweeter.</p>
+          </article>
+          <article class="message-card">
+            <h3>Your kindness</h3>
+            <p>You care so deeply and make everyone around you feel loved Sponono Saka.</p>
+          </article>
+          <article class="message-card">
+            <h3>Your laughter</h3>
+            <p>Every laugh with you feels like sunshine, and I want more of it forever.</p>
+          </article>
+        </div>
+        <div class="photo-grid">
+          <div class="photo-card">
+            <img src="Her smiling.jpg" alt="Her smiling" />
+            <p>Your beautiful smile in the sunshine.</p>
+          </div>
+          <div class="photo-card">
+            <img src="Laughter.jpg" alt="Her laughing" />
+            <p>A happy moment with your laughter.</p>
+          </div>
+          <div class="photo-card">
+            <img src="Her in a special moment.jpg" alt="Her in a special moment" />
+            <p>One of my favorite memories of you.</p>
+          </div>
+        </div>
+        <div class="page-2-footer">
+          <p class="play-hint"></p>
+          <button id="toPage3" class="next-btn">Next</button>
+        </div>
+      </section>
+
+      <section class="page page-3" id="page3">
+        <div class="section-head">
+          <h2>Us Together</h2>
+          <p>This page is for the story we share and the future I'm excited to build with you.</p>
+        </div>
+        <div class="story-card">
+          <div class="story-text">
+            <h3>Our favorite thing</h3>
+            <p>The way we laugh at the same jokes, support each other, and make ordinary days feel extraordinary. You are my partner, my joy, and the love I want beside me always.</p>
+            <p>Twenty is just the beginning I can already see the next chapters full of travel, cozy nights, and more reasons to celebrate you.</p>
+          </div>
+          <div class="story-image">
+            <img src="Us together.jpg" alt="Us together" />
+            <p></p>
+          </div>
+        </div>
+        <div class="video-card">
+          <h3>Our Video</h3>
+          <div class="video-wrapper">
+            <video id="memoryVideo" controls muted playsinline src="VIDEO2.mp4" poster="images/video-poster.jpg">Your browser does not support HTML5 video.</video>
+            <div class="video-bubble" role="note" aria-label="Sweet message">
+              <div class="bubble-inner">
+                <p>Remember this twirl? I still get butterflies, you're my favorite dance.</p>
+                <span class="bubble-heart">💫</span>
+              </div>
+            </div>
+          </div>
+          <p class="video-note"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
